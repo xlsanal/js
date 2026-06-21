@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xlsanal | Developer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0b0c10;
+            --card-bg: #1f2833;
+            --text-main: #c5c6c7;
+            --text-title: #ffffff;
+            --accent-color: #66fcf1;
+            --accent-hover: #45f3e7;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 750px;
+            width: 100%;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--text-title);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        h1 span {
+            color: var(--accent-color);
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: #8f94fb;
+            margin-top: 0;
+            font-weight: 500;
+        }
+        h2 {
+            color: var(--text-title);
+            border-bottom: 1px solid #2f3136;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+            border: 1px solid transparent;
+        }
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--text-title);
+            font-size: 1.25rem;
+        }
+        .project-card p {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        .tag {
+            background: rgba(102, 252, 241, 0.1);
+            color: var(--accent-color);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .btn-guns {
+            display: inline-flex;
+            align-items: center;
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 2px solid var(--accent-color);
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.2s ease;
+        }
+        .btn-guns:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+        }
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4f5d75;
+        }
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Merhaba, ben <span>xlsanal</span></h1>
+        <p class="subtitle">Backend & Discord Bot Developer</p>
+        <p>Node.js ve JavaScript ekosisteminde modern altyapılar, gelişmiş otomasyon araçları ve topluluk odaklı backend çözümleri geliştiriyorum.</p>
+    </header>
+
+    <h2>Projelerim</h2>
+
+    <!-- Proje 1 -->
+    <div class="project-card">
+        <h3>Tanaka // Advanced Discord Bot</h3>
+        <p>Node.js, pnpm ve Git entegrasyonu ile sıfırdan inşa edilmiş; gelişmiş moderasyon yeteneklerine, özelleştirilebilir loglama modüllerine ve yüksek performanslı mimariye sahip topluluk botu.</p>
+        <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Discord.js</span>
+            <span class="tag">pnpm</span>
+            <span class="tag">Git</span>
+        </div>
+    </div>
+
+    <!-- Proje 2 -->
+    <div class="project-card">
+        <h3>Server Activity Log & Security System</h3>
+        <p>Sunucu içi tüm veri akışını ve kullanıcı aktivitelerini gerçek zamanlı (real-time) takip eden, API destekli güvenlik ve verimlilik odaklı loglama aracı.</p>
+        <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">REST API</span>
+        </div>
+    </div>
+
+    <h2>İletişim & Bağlantılar</h2>
+    <p>Projelerimi yakından incelemek veya benimle iletişime geçmek için Guns.lol profilimi ziyaret edebilirsiniz:</p>
+    <a href="https://guns.lol/xlsanal" target="_blank" class="btn-guns">🔗 guns.lol/xlsanal</a>
+</div>
+
+<footer>
+    <p>Powered by GitHub Pages | <a href="https://js.org" target="_blank">Hosted on JS.ORG</a></p>
+</footer>
+
+</body>
+</html>
